@@ -6,7 +6,10 @@ knit: (function(input_file, encoding) {
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 
 title: "speed and distance"
-output: html_document
+output:
+  prettydoc::html_pretty:
+  theme: cayman
+  highlight: github
 ---
 
 
